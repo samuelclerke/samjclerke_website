@@ -1,0 +1,70 @@
+/* Greeting */
+
+main {
+  height: calc(100% - 80px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting-container {
+  width: 1100px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.greeting-container div:nth-child(1) {
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting-container div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+}
+
+.greeting h1 {
+  border-left: solid rgb(83, 83, 83) 2px;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.greeting p {
+  font-size: 1.7rem;
+  border-left: solid rgb(83, 83, 83) 2px;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.greeting ul {
+  border-left: solid rgb(83, 83, 83) 2px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+.greeting ul a {
+  margin-right: 20px;
+  text-decoration: none;
+  height: 100%;
+}
+
+.greeting ul a li {
+  list-style-type: none;
+  height: 100%;
+  object-fit:contain;
+}
+
+.greeting img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+

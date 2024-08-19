@@ -8,11 +8,38 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 /* GENERAL */
 
+HTML {
+  height: 100%;
+}
 
+h1 {
+  font-family: "Teko", sans-serif;
+  font-size: 3rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.v-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
 
 /* HEADER */
 
@@ -29,11 +56,21 @@ header div:nth-child(1) {
   text-align: left;
   width: 50%;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+header div:nth-child(1) p {
+  margin: 0px;
+  font-weight: bold;
 }
 
 header div:nth-child(2) {
   width: 50%;
-  text-align: center;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 header div ul {
