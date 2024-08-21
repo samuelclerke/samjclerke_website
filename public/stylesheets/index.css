@@ -13,6 +13,7 @@ main {
   height: 500px;
   display: flex;
   flex-direction: row;
+  user-select: none;
 }
 
 .greeting-container div:nth-child(1) {
@@ -28,20 +29,23 @@ main {
 }
 
 .greeting h1 {
-  border-left: solid rgb(83, 83, 83) 2px;
+  transition: 0.3s ease-in-out;
+  border-left: solid black 2px;
   padding-left: 20px;
   justify-content: center;
 }
 
 .greeting p {
+  transition: 0.3s ease-in-out;
   font-size: 1.7rem;
-  border-left: solid rgb(83, 83, 83) 2px;
+  border-left: solid black 2px;
   padding-left: 20px;
   justify-content: center;
 }
 
 .greeting ul {
-  border-left: solid rgb(83, 83, 83) 2px;
+  transition: 0.3s ease-in-out;
+  border-left: solid black 2px;
   padding-left: 20px;
   display: flex;
   flex-direction: row;
@@ -67,4 +71,13 @@ main {
   width: auto;
   object-fit: contain;
 }
+
+.greeting-hover:hover {
+  transition: 0.3s ease-in-out;
+  color: white;
+  background-color: black;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2), -10px -10px 10px white;
+}
+
+
 
