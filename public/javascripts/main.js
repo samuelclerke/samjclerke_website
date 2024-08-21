@@ -14,3 +14,4 @@ function mouseTracker() {
 document.addEventListener('DOMContentLoaded', () => {
   mouseTracker();
 });
+ 
