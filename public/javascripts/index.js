@@ -22,3 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   typeNextChar();
 });
+
+
+function headerLinkHover() {
+  var rect = element.getBoundingClientRect
+}
