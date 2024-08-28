@@ -6,8 +6,6 @@ function mouseTracker() {
     let y = e.clientY;
 
     body.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.2))`;
-
-    console.log(x, y);
   })
 };
 
