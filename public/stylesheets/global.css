@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Funnel+Display:wght@300..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches&family=Teko:wght@300..700&display=swap');
 
 html {
   height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: #0c0c0c;
 }
 
 body {
@@ -19,11 +20,52 @@ h1 {
   font-family: "Roboto", serif;
   font-weight: 400;
   font-style: bold;
+  font-size: 4rem;
+}
+
+footer {
+  background-color: #0c0c0c;
 }
 
 .bio p {
-  margin: 0;
-  font-family: "Roboto", serif;
+  margin: 0px 20px 0px 20px;
   font-weight: 400;
   font-style: normal;
+  font-size: 2.5rem;
+}
+
+.black_text {
+  color: black;
+}
+
+.white_text {
+  color: white;
+}
+
+.funnel_display {
+  font-family: "Funnel Display", sans-sarif;
+}
+
+.funnel_display_b {
+  font-family: "Funnel Display", sans-sarif;
+  font-weight: 600;
+}
+
+.rainbow_highlight {
+  animation: rainbow-text-shadow 2s infinite linear;
+}
+
+@keyframes rainbow-text-shadow {
+  0% {
+    text-shadow: 0 0 15px white;
+    color: white;
+  }
+  50% {
+    text-shadow: 0 0 4px white;
+    color: white;
+  }
+  100% {
+    text-shadow: 0 0 15px white;
+    color: white;
+  }
 }

@@ -1,65 +1,88 @@
 main {
-  background-color: rgb(255, 255, 255);
+  background-color: #0c0c0c;
   height: 100vh;
   width: 100%;
+  align-items: center;
+  z-index: 0;
+  background-image: url("../images/background-tile.png");
+  background-repeat: repeat;
+  background-size: calc(100vh/80);
 }
 
 .core {
   height: 80%;
   width: 80%;
-}
-
-#about_me {
-  background-color: rgb(204, 0, 0);
-  height: 600px;
-  width: 100%;
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
 }
 
-#github {
-  background-color: rgb(153, 0, 0);
-  height: 600px;
-  width: 100%;
-
-  display: flex;
+.bio {
+  margin: auto;
+  padding: 20px;
+  height: fit-content;
+  width: 40%;
+  align-content: center;
+  text-align: center;
+  background-color: #0c0c0c;
+  border-radius: 50px;
 }
 
-#proj_01 {
-  background-color: rgb(102, 0, 0);
-  height: 600px;
-  width: 100%;
-
-  display: flex;
-}
-
-#proj_02 {
-  background-color: rgb(51, 0, 0);
-  height: 600px;
-  width: 100%;
-
-  display: flex;
-}
-
-#contact_me {
-  background-color: rgb(0, 0, 0);
-  height: 600px;
-  width: 100%;
-
-  display: flex;
-}
-
-.link_bar_container {
+.profile_pic {
   height: 100%;
-  width: 100px;
+  width: 50%;
+  align-content: center;
 }
 
-.content_container {
-  height: 100%;
-  width: calc(100% - 400px);
+#main_decal {
+  height: 200vh;
+  width: calc(100vw/40);
+  position: relative;
+  top: -100%;
+  left: 85%;
+  background-image: url("../images/scroll-down-helper.png");
+  background-size: calc(100vw/40);
+  z-index: 1;
+  animation: sliding-decal infinite 20s linear;
 }
 
-.transforming_text_container {
-  height: 100%;
-  width: 300px;
+@keyframes sliding-decal {
+  from {top: -100vh;}
+  to {top: 0vh;}
+}
+
+.wave_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave {
+  width: 50px;
+  transform-origin: 75% 75%;
+}
+
+.wave:hover {
+  animation: waver infinite 0.75s linear;
+}
+
+@keyframes waver {
+  0% {
+    transform: rotate(0turn);
+  }
+  25% {
+    transform: rotate(-0.1turn);
+  }
+  50% {
+    transform: rotate(0turn);
+  }
+  75% {
+    transform: rotate(0.1turn);
+  }
+  100% {
+    transform: rotate(0turn);
+  }
 }
