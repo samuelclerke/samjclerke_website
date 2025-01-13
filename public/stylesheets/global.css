@@ -74,6 +74,7 @@ footer {
   width: 70%;
   height: auto;
   border-radius: 5%;
-  border: #;
+  border: #ffffff;
+  box-shadow: 10px #ffffff;
   
 }
