@@ -3,7 +3,7 @@ main {
   height: 100vh;
   width: 100%;
   align-items: center;
-  z-index: 0;
+  z-index: -1;
   background-image: url("../images/background-tile.png");
   background-repeat: repeat;
   background-size: calc(100vh/80);
@@ -34,23 +34,6 @@ main {
   height: 100%;
   width: 50%;
   align-content: center;
-}
-
-#main_decal {
-  height: 200vh;
-  width: calc(100vw/40);
-  position: relative;
-  top: -100%;
-  left: 85%;
-  background-image: url("../images/scroll-down-helper.png");
-  background-size: calc(100vw/40);
-  z-index: 1;
-  animation: sliding-decal infinite 20s linear;
-}
-
-@keyframes sliding-decal {
-  from {top: -100vh;}
-  to {top: 0vh;}
 }
 
 .wave_wrapper {
@@ -88,17 +71,44 @@ main {
 }
 
 #about_me {
-  
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  z-index: 2;
+  align-items: center;
+  align-content: center;
 }
 
 #proj_01 {
-  
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  z-index: 2;
 }
 
 #proj_02 {
-
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  z-index: 2;
 }
 
 #contact_me {
-  
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.content_container {
+  width: 40vw;
+  min-height: 200px;
+  height: auto;
+  margin-left: 30%;
+  text-align: center;
+  border: white 2px solid;
+  border-radius: 20px;
 }
