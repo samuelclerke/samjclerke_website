@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -53,15 +53,6 @@ footer {
   color: white;
 }
 
-.funnel_display {
-  font-family: "Funnel Display", sans-sarif;
-}
-
-.funnel_display_b {
-  font-family: "Funnel Display", sans-sarif;
-  font-weight: 600;
-}
-
 .rainbow_highlight {
   animation: rainbow-text-shadow 2s infinite linear;
 }
@@ -88,4 +79,8 @@ footer {
   border: #ffffff;
   box-shadow: 10px #ffffff;
   
+}
+
+footer {
+  font-family: "JetBrains Mono", serif;
 }

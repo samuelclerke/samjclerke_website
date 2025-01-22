@@ -70,6 +70,42 @@ main {
   }
 }
 
+header {
+  width: 400px;
+  height: 52px;
+  margin-top: 20px;
+  margin-left: calc(50% - 200px);
+  background-color: rgb(14, 14, 14);
+  border: rgb(28, 28, 28) 2px solid;
+  border-radius: 15px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#header_button_container {
+  display: flex;
+  width: 400px;
+  height: 48px;
+  gap: 6px;
+  align-items: center;
+}
+
+#header_button_container button {
+  background-color: rgb(30, 30, 30);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  border-color: rgb(60, 60, 60);
+  font-family: "JetBrains Mono", serif;
+  font-weight: 800;
+  font-size: 1rem;
+  width: 30%;
+  height: 40px;
+}
+
+#header_button_container button:hover {
+  cursor: pointer;
+}
+
 #about_me {
   width: 100%;
   height: auto;
@@ -78,22 +114,25 @@ main {
   z-index: 2;
   align-items: center;
   align-content: center;
+  display: block;
 }
 
-#proj_01 {
+#curr_projects {
   width: 100%;
   height: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   z-index: 2;
+  display: none;
 }
 
-#proj_02 {
+#curr_projects2 {
   width: 100%;
   height: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   z-index: 2;
+  display: none;
 }
 
 #contact_me {
@@ -101,6 +140,7 @@ main {
   height: auto;
   margin-top: 40px;
   margin-bottom: 40px;
+  display: none;
 }
 
 .content_container {
@@ -109,6 +149,11 @@ main {
   height: auto;
   margin-left: 30%;
   text-align: center;
-  border: white 2px solid;
+  border: rgb(45, 45, 45) 1px solid;
   border-radius: 20px;
+  background-image: linear-gradient(165deg, rgb(18, 18, 18) 30%, rgb(30, 30, 30));
+}
+
+.content_container h2 {
+  padding: 10px;
 }
