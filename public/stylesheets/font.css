@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.rubik-regular {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-thin {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rubik-bold {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rubik-black {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.jetbrains-mono-regular {
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jetbrains-mono-thin {
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.jetbrains-mono-bold {
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.jetbrains-mono-black {
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.text-w {
+  color: white;
+}
+
+.text-b {
+  color: black;
+}
+
+.text-ul {
+  text-decoration: underline;
+}
+
+.text-size-1rem {
+  font-size: 1rem;
+}
+
+.text-size-1_1rem {
+  font-size: 1.1rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}

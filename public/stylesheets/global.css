@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-
 html {
   height: 100vh;
   width: 100%;
@@ -17,18 +15,11 @@ body {
 
 h1 {
   margin: 0;
-  font-family: "JetBrains Mono", serif;
-  font-weight: 400;
-  font-style: bold;
   font-size: 4rem;
-  text-decoration: underline;
 }
 
 h2 {
-  margin: 0;
-  font-family: "JetBrains Mono", serif;
-  font-weight: 300;
-  font-style: bold;
+  margin: 30px 0px 30px 0px;
   font-size: 2.5rem;
 }
 
@@ -38,45 +29,25 @@ h3 {
   font-weight: 300;
   font-style: normal;
   font-size: 1.5rem;
-}
-
-footer {
-  background-color: #0c0c0c;
-}
-
-.bio p {
-  margin: 0px 20px 0px 20px;
-  font-family: "JetBrains Mono", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.5rem;
-}
-
-.black_text {
-  color: black;
-}
-
-.white_text {
   color: white;
 }
 
-.rainbow_highlight {
-  animation: rainbow-text-shadow 2s infinite linear;
+footer {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes rainbow-text-shadow {
-  0% {
-    text-shadow: 0 0 15px white;
-    color: white;
-  }
-  50% {
-    text-shadow: 0 0 4px white;
-    color: white;
-  }
-  100% {
-    text-shadow: 0 0 15px white;
-    color: white;
-  }
+footer > p{
+  font-size: 1rem;
+  width: auto;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
 }
 
 .info_panel {
@@ -84,10 +55,5 @@ footer {
   height: auto;
   border-radius: 5%;
   border: #ffffff;
-  box-shadow: 10px #ffffff;
-  
-}
-
-footer {
-  font-family: "JetBrains Mono", serif;
+  box-shadow: 10px #ffffff; 
 }

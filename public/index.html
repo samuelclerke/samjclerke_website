@@ -6,92 +6,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheets/global.css">
   <link rel="stylesheet" href="stylesheets/index.css">
-  <link rel="icon" href="images/favicon.png"
-  <script src="javascripts/greeting.js"></script>
+  <link rel="stylesheet" href="stylesheets/font.css">
+  <link rel="icon" href="images/favicon.png">
+  <script src="javascripts/headerSwitch.js"></script>
   <title>SamJClerke - Index</title>
 </head>
 
 <body>
+  <div id="onload_overlay">
+    <svg class="overlay_signature_svg"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 1080" xml:space="preserve">
+      <path d="M539.98,344.93c124.81-41.02,237.51-118.19,320.9-219.72c3.83-4.66,7.81-10.02,7.33-16.03
+        c-1.05-13.23-19.78-14.99-32.75-12.15c-96.67,21.18-185.04,78.27-244.08,157.69c-11.1,14.92-21.29,35.68-10.71,50.98
+        c5.29,7.65,14.49,11.48,23.33,14.37c55.98,18.26,119.3,14.97,169.95,44.99c6.39,3.79,12.82,8.47,15.55,15.38
+        c4.39,11.12-2.26,23.34-9.2,33.07c-31.09,43.59-72.72,78.45-114.88,111.45c-82.49,64.56-168.86,124.01-256.31,181.67
+        c-40.83,26.92-82.86,53.89-130.24,66.02c113.57-109.06,245.34-197.04,376.33-284.4C868.9,345.73,1082.59,203.22,1296.28,60.7
+        c-30.56,0.37-58.23,17.24-83.49,34.43c-122.67,83.5-230.87,188.2-318.34,308.07c-30.24,41.45-58.42,85.53-72.35,134.91
+        c-2.28,8.07-3.67,18.03,2.5,23.71c3.91,3.6,9.68,4.19,15,4.22c16,0.09,32.02-3.21,46.68-9.65" stroke="white" fill="transparent" stroke-width="10" id="signature_p1" />
+      <path d="M904.63,388.12c27.04,6.91,54.36-8.27,77.79-23.43c108-69.84,207.63-151.69,306.99-233.34
+        c-44.41,34.47-80.41,79.68-104.07,130.68c-13.35,28.77-22.92,60.52-18.77,91.96s24.66,62.22,55.13,70.98" stroke="white" fill="transparent" stroke-width="10" id="signature_p2" />
+    </svg>
+  </div>
+
   <main>
-    <div class="core">
-      <div class="bio">
-        <h1 class="white_text">Samuel J Clerke</h1>
-        <br>
-        <p class="white_text"><span id="greeting">Hey</span>, I am a <span class="rainbow_highlight">software engineer</span>. Welcome to my website.</p>
-        <br>
-        <div class="wave_wrapper"><p class="wave">👋🏼</p></div>
-        <br>
-        <p class="white_text" style="font-size: 1.6rem;">📍 Adelaide, South Australia, Australia</p>
-      </div>
-      <div class="profile_pic">
-        <img src="" alt="Picture of Samuel C">
-      </div>
+    
+    <div>
+      <h1 class="rubik-bold main-heading">Samuel Clerke</h1>
+      <p class="rubik-regular main-occupation">Software Engineer</p>
+      <p class="rubik-thin main-location">📍 Adelaide, Australia</p>
+    </div>
+
+    <div>
+      <p class="rubik-bold">&lt/&gt</p>
     </div>
   </main>
 
   <header>
     <div id="header_button_container">
-      <button style="margin-left: 2.5%;" id="about">ABOUT</button>
-      <button id="projects">PROJECTS</button>
-      <button id="contact">CONTACT</button>
+      <button class="rubik-bold pressed" id="about">ABOUT</button>
+      <button class="rubik-bold standard" id="projects">PROJECTS</button>
+      <button class="rubik-bold standard" id="contact">CONTACT</button>
     </div>
   </header>
 
-  <section id="about_me">
-    <div class="content_container">
-      <h2 class="white_text" style="text-decoration: underline;">About Me</h2>
-      <div class="bordered_div">
-        <h3 class="white_text" style="text-decoration: underline;">Languages</h3>
-        <div class="adaptive_flex">
-          <div><img src="images/c256_256.png" alt=""></div>
-          <div><img src="images/cpp256_256.png" alt=""></div>
-          <div><img src="images/python256_256.png" alt=""></div>
-          <div><img src="images/html256_256.png" alt=""></div>
-          <div><img src="images/css256_256.png" alt=""></div>
-          <div><img src="images/js256_256.png" alt=""></div>
-          <div><img src="images/bash256_256.png" alt=""></div>
+  <section class="details_container" data-group="about_me_group" style="display: block;">
+    <div class="about_me_panel">
+      <h2 class="rubik-bold text-w">About</h2>
+      <p class="rubik-regular text-w">
+        I'm a current student at the University of Adelaide, attending my third and final year. 
+        I'm keen about technology and its endless possibilities whether that be through Web Development or CLI tools.
+        Growing up around technology has always made me wonder what wonderful creations can come from the internet of things.
+      </p>
+    </div>
+    
+    <div class="links_panel">
+      <a href="https://github.com/samuelclerke">
+        <div>
+          <img src="images/github.png" alt="">
+          <p class="rubik-thin text-w">GitHub</p>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/samuel-clerke-539972291/">
+        <div>
+          <img src="images/linkedin.png" alt="">
+          <p class="rubik-thin text-w">LinkedIn</p>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/samclerke/">
+        <div>
+          <img src="images/instagram256_256.png" alt="">
+          <p class="rubik-thin text-w">Instagram</p>
+        </div>
+      </a>
+    </div>
+
+    <div style="margin-top: 60px;" class="tools_panel">
+      <h2 class="rubik-bold text-w">Tools and Technologies</h2>
+      <p class="rubik-regular text-w">I absolutely love testing and playing around with new technologies. Here I have listed my more experienced languages and technologies.</p>
+      <div class="tools_panel_images">
+        <div class="panel_item_sm">
+          <img src="images/html256_256.png" alt="">
+          <p>HTML</p>
+        </div>
+        <div class="panel_item_sm">
+          <img src="images/css256_256.png" alt="">
+          <p>CSS</p>
+        </div>
+        <div class="panel_item_sm">
+          <img src="images/js256_256.png" alt="">
+          <p>Javascript</p>
+        </div>
+        <div class="panel_item_sm">
+          <img src="images/python256_256.png" alt="">
+          <p>Python</p>
+        </div>
+        <div class="panel_item_sm">
+          <img src="images/c256_256.png" alt="">
+          <p>C</p>
+        </div>
+        <div class="panel_item_sm">
+          <img src="images/cpp256_256.png" alt="">
+          <p>C++</p>
+        </div>
+        <div class="panel_item_sm">
+          <img src="images/nodejs256_256.png" alt="">
+          <p>NodeJS</p>
+        </div>
+        <div class="panel_item_sm">
+          <img src="images/bash256_256.png" alt="">
+          <p>Bash/Linux</p>
         </div>
       </div>
-      
-      <div class="bordered_div">
-        <h3 class="white_text" style="text-decoration: underline;">Technologies</h3>
-        <div class="adaptive_flex">
-          <div><img src="images/mysql256_256.png" alt=""></div>
-          <div><img src="images/nodejs256_256.png" alt=""></div>
-          <div><img src="images/tailwind256_256.png" alt=""></div>
-        </div>
-      </div>
     </div>
+
+    <div class="learning_panel">
+
+    </div>
+
   </section>
 
-  <section id="past_projects">
-    <div class="content_container">
-      <h2 class="white_text">Past Projects</h2>
-    </div>
+  <section data-group="projects_group" style="display: none;">
+
   </section>
 
-  <section id="curr_projects">
-    <div class="content_container">
-      <h2 class="white_text">Current Projects</h2>
-    </div>
-  </section>
+  <section data-group="contact_group" style="display: none;">
 
-  <section id="contact_me">
-    <div class="content_container">
-      <h2 class="white_text">Contact Me</h2>
-    </div>
   </section>
 
   <footer>
-    <div>
-      <p class="white_text ">© Samuel Clerke 2024</p>
-    </div>
-    <div>
-      <p></p>
-    </div>
-    <div>
-      <p></p>
-    </div>
+    <p>Copyright&copy; samjclerke.com</p>
+    <p>Developed by Samuel Clerke</p>
   </footer>
 
 </body>
