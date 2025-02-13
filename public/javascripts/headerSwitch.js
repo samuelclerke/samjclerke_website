@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('projects').onclick = () => {
     about_sect.style.display = 'none';
     about_button.classList.replace('pressed', 'standard');
-    project_sect.style.display = 'block';
+    project_sect.style.display = 'flex';
     project_button.classList.replace('standard', 'pressed');
     contact_sect.style.display = 'none';
     contact_button.classList.replace('pressed', 'standard');

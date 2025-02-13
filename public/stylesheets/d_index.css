@@ -124,7 +124,7 @@ header {
 }
 
 
-.details_container {
+.about_section {
   width: 50%;
   height: auto;
   margin: auto;
@@ -278,4 +278,53 @@ path {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.project_section {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_container {
+  width: 48%;
+  height: calc(400px);
+  padding: 1%;
+  border: rgb(40, 40, 40) 1px solid;
+  border-radius: 20px;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  margin: 20px;
+}
+
+.project_container img {
+  width: 50%;
+  margin-right: 1%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.project_container > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 1%;
+  border-left: solid 1px white;
+}
+
+.button_container {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.project_container .button_container button {
+  width: 46%;
+  height: 50px;
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(25, 25, 25);
 }
