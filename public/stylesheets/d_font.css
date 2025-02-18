@@ -64,7 +64,11 @@
   color: black;
 }
 
-.text-ul {
+.text-grey {
+  color: rgb(158, 158, 158);
+}
+
+.underline {
   text-decoration: underline;
 }
 
@@ -79,3 +83,4 @@
 .upper {
   text-transform: uppercase;
 }
+
