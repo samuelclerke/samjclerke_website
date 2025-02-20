@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     about_button.classList.replace('pressed', 'standard');
     project_sect.style.display = 'none';
     project_button.classList.replace('pressed', 'standard');
-    contact_sect.style.display = 'block';
+    contact_sect.style.display = 'flex';
     contact_button.classList.replace('standard', 'pressed');
   }
 });
