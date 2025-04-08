@@ -80,7 +80,11 @@
   font-size: 1.1rem;
 }
 
-.upper {
+.text-upper {
   text-transform: uppercase;
+}
+
+.text-italic {
+  font-style: italic;
 }
 
